@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section img {
+    width: 100%;
+    margin-top: 20px;
+}
+
+section {
+    padding: 20px;
+    background-color: #fef7e2;
+    border-radius: 20px;
+    color: #612406;
+}
+
+@media screen and (min-width: 780px) {
+    section {
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    section img {
+        order: -1;
+        width: 50%;
+        margin-top: 0px;
+
+    }
+
+    .sectionBody {
+        display: flex;
+        flex-direction: column;
+    }
+}

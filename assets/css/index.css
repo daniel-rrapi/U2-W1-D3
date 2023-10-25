@@ -1,0 +1,153 @@
+body {
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#mainContainer {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    height: calc(100vh - 150px);
+    overflow-y: auto;
+}
+
+/* NAV STYLE  */
+nav {
+    height: 150px;
+    width: 100%;
+    background-color: #fbf7e3;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.navButton {
+    background-color: #f3df85;
+    padding: 10px;
+    border-radius: 50rem;
+    color: #612406;
+    font-weight: 800;
+}
+
+.navButton img {
+    width: 50px;
+}
+
+.navButton:nth-child(3) {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+/* CARDS STYLE  */
+h1,
+h2 {
+    color: #612406;
+    font-weight: 800;
+    font-size: 2.5rem;
+}
+
+.cards {
+
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    row-gap: 41px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card {
+    border-radius: 110px;
+    width: 310px;
+    background-color: #fbf7e3;
+}
+
+.card img {
+    max-width: 100%;
+    border-top-right-radius: 110px;
+    border-top-left-radius: 110px;
+}
+
+.cardBottom {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.cardTitle {
+    display: flex;
+    flex-direction: column;
+}
+
+.cardPrice {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.card h1 {
+    color: #612406;
+    line-height: 0rem;
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+.card p {
+    color: #612406;
+    line-height: 0rem;
+}
+
+.card button {
+    padding: 15px 30px;
+    align-self: flex-end;
+    margin-inline: auto;
+    border: none;
+    background-color: #f3df85;
+    color: #612406;
+    font-weight: 600;
+    border-radius: 1rem;
+}
+
+
+/* FLEXIBLE ARTICLE STYLE  */
+section img {
+    width: 100%;
+    margin-top: 20px;
+}
+
+section {
+    padding: 20px;
+    background-color: #fef7e2;
+    border-radius: 20px;
+    color: #612406;
+}
+
+@media screen and (min-width: 780px) {
+    section {
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    section img {
+        order: -1;
+        width: 50%;
+        margin-top: 0px;
+        display: flex;
+        align-self: center;
+
+    }
+
+    .sectionBody {
+        display: flex;
+        flex-direction: column;
+    }
+}
